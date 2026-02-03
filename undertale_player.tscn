@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://oqs4bgqmy5hn"]
+
+[ext_resource type="Script" uid="uid://byj8nrrctjucg" path="res://addons/godot-tale-engine/World/UndertalePlayer.cs" id="1_jvvrc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bw536"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hvbqq"]
+
+[node name="UndertalePlayer" type="CharacterBody2D"]
+script = ExtResource("1_jvvrc")
+metadata/_custom_type_script = "uid://byj8nrrctjucg"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_bw536")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_hvbqq")
