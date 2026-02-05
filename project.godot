@@ -11,12 +11,17 @@ config_version=5
 [application]
 
 config/name="Undertale Curiosity"
+run/main_scene="uid://318atttd0vpq"
 config/features=PackedStringArray("4.5", "C#", "Forward Plus")
 config/icon="res://Assets/icon.svg"
 
 [dotnet]
 
 project/assembly_name="Undertale Curiosity"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/godot-tale-engine/plugin.cfg")
 
 [input]
 
